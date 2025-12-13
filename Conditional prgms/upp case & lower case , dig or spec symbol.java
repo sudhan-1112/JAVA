@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class Q2 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        char a=sc.next().charAt(0);
@@ -10,8 +10,12 @@ public class Q2 {
        else if(Character.isLowerCase(a)){
         System.out.print("Lowercase");
        }
+       else if(Character.isDigit(a)){
+        System.out.print("Digit");
+       }
        else{
-        System.out.print("Invalid Input");
+           System.out.println("Special symbol");
        }
     }
 }
+
